@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { Link } from 'expo-router';
+import { verifyInstallation } from 'nativewind';
+// ... inside your component
 
-export default function App() {
+export default function Home() {
+  verifyInstallation();
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+        <Link href={"/about"}>About</Link>
+        <Link href={"/contact"}>Contact</Link>
+      <Link href={"/card"}>Card</Link>
       <StatusBar style="auto" />
     </View>
   );

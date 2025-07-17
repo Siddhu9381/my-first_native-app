@@ -3,6 +3,7 @@
     "name": "my-first_native-app",
     "slug": "my-first_native-app",
     "version": "1.0.0",
+    "scheme": "my-first_native-app",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,6 +25,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
