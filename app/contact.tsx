@@ -16,7 +16,6 @@ const Contact = () => {
             <Pressable className='bg-green-300 px-6 py-2 rounded-lg active:bg-green-800'>
                   <Text className='text-white font-semibold'>Go to home page</Text>
             </Pressable>
-            
         </Link>
     </View>
   )
